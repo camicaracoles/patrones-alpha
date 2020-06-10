@@ -2,8 +2,6 @@ import { templatemenu } from './templatemenu.js';
 
 
 export const templatecrear = () => {
-    const divCrear = document.createElement('div');
-
     const viewCrear = `
         <div id="franjaUnoCrear">
             <div class="sandiasArriba">
@@ -54,6 +52,8 @@ export const templatecrear = () => {
             </div>
         </div>
         `
-    divCrear.innerHTML= viewCrear;    
-    return divCrear;
+	document.getElementById('root').innerHTML = viewCrear
+	document.getElementById('textoCuadroMAs').addEventListener('click', () => {
+		alert('Cargando imagen...');
+	})
 }

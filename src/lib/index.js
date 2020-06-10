@@ -13,8 +13,7 @@ export const loginGoogle = () => {
     // The signed-in user info.
     var user = result.user;
     console.log('user', user)
-    const mostrarCrear = document.getElementById('root');
-    mostrarCrear.innerHTML = templatecrear().innerHTML;
+    templatecrear();
     enviarCorreo()
     // ...
   }).catch(function (error) {
@@ -33,8 +32,7 @@ export const loginGoogle = () => {
 export const iniciarSesion = () => {
   if (firebase.auth().currentUser) {
     firebase.auth().signOut();
-    const mostrarCrear = document.getElementById('root');
-    mostrarCrear.innerHTML = templatecrear().innerHTML;
+    templatecrear();
   } else {
     var email = document.getElementById('email').value;
     var password = document.getElementById('contraseña').value;
@@ -50,7 +48,7 @@ export const iniciarSesion = () => {
 
     firebase.auth().signInWithEmailAndPassword(email, password).then(function (data) {
       const mostrarCrear = document.getElementById('root');
-      mostrarCrear.innerHTML = templatecrear().innerHTML;
+      templatecrear();
     }).catch(function (error) {
       // Handle Errors here.
       var errorCode = error.code;
@@ -85,8 +83,7 @@ export const validarRegistro = () => {
   }
 
   firebase.auth().createUserWithEmailAndPassword(email, password).then(function (data) {
-    const mostrarCrear = document.getElementById('root');
-    mostrarCrear.innerHTML = templatecrear().innerHTML;
+    templatecrear();
     enviarCorreo()
   }).catch(function (error) {
     // Handle Errors here.
