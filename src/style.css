@@ -1,304 +1,389 @@
+
 @font-face {
-    font-family: 'Brushstrike';
-    src: url(./fonts/Brushstrike\ trial.ttf);
-    font-family: "Roboto-Regular";
-    src: url(./fonts/Roboto-Regular.ttf);
+    font-family: "Reenie Beanie";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/ReenieBeanie-Regular.ttf");
 }
 
-#imagenUno {
-    background-image: url(./image/login/torresEscritorio.png);
-    height: 1000px;
-    background-repeat: no-repeat;
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/Roboto-Regular.ttf.ttf");
 }
 
-#imagenDos {
-    background-image: url(./image/login/cascadaEscritorio.png);
-    height: 1000px;
-    background-repeat: no-repeat;
+/* viewLogin */
+
+#sandiauno {
+    width: 100%;
 }
 
-#imagenTres {
-    background-image: url(./image/login/iglesiaEscritorio.png);
-    height: 1000px;
-    background-repeat: no-repeat;
+#franjaDos {
+    display: flex;
+    justify-content: center;
 }
 
-#imagenCuatro {
-    background-image: url(./image/login/cascadaEscritorio.png);
-    height: 1000px;
-    background-repeat: no-repeat;
+#titulo {
+    position: relative;
+    bottom: 50px;
 }
 
-#logo {
-    position: absolute;
-    width: 187px;
-    height: 151px;
-    top: 45px;
-    border-radius: 10px;
-    margin-top: 33px;
-    left: 624px;
-}
-
-#usuario {
-
-    position: absolute;
-    bottom: 475px;
-    top: 424px;
-    left: 681px;
-    z-index: 1;
+#franjaTres {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 30px;
+    font-size: 48px;
+    line-height: 48px;
+    color: #000000;
+    font-family: "Reenie Beanie";
+    font-style: normal;
+    font-weight: normal;
 }
 
 #contenedorIngreso {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    width: 295px;
-    height: 326px;
-    margin-top: 136px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    top: 334px;
-    left: 568px;
+    justify-content: center;
+    align-items: center;
 }
 
-input {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    height: 35px;
-    width: 276px;
-    margin-top: 17px;
-    margin-left: 5px;
-    font-family: "Roboto-Regular";
-    font-size: 102%;
+#imagenUsuario {
+    display: flex;
+    justify-content: center;
 }
 
-button {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    width: 276px;
-    margin-top: 17px;
-    height: 34px;
-    margin-left: 8px;
-    cursor: pointer;
-    font-family: "Roboto-Regular";
-    font-size: 102%;
-}
 
-#iniciar {
-    background: linear-gradient(180.75deg, #039F87 3.82%, #00D1CD 96.19%);
-    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
-
-}
-
-.textoInicial {
-    text-align: center;
-    position: absolute;
-    top: 251px;
-    left: 552px;
-
-
-}
-
-.parrafoUno {
-
-    font-size: 300%;
-    font-family: 'Brushstrike';
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-#pTres {
-    margin-left: 80px;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    font-family: "Roboto-Regular";
-    font-size: 102%;
+#imgUsuario {
+ width: 160px;
+ height: 160px;
 }
 
 #email {
-    position: absolute;
-    display: flex;
-    background-repeat: no-repeat;
-    background-image: url(./image/new-email-outlined-envelope-back\ 1.png);
-    background-position: right;
-    margin-top: 23px;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 #contraseña {
-    background-image: url(./image/padlock\ 1.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    margin-top: 78px;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-#iconoGoogle {
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 22px;
-    width: 26px;
-    background-image: url(./image/google1.png);
-    bottom: 286px;
-    right: 895px;
+#iniciar {
+    width: 408px;
+    height: 45px;
+    text-align: center;
+    background: linear-gradient(180.74deg, #039F87 3.82%, #00D1CD 96.19%);
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+}
 
+#google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 408px;
+    height: 45px;
+    text-align: center;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    
+}
+
+#imgGoogle {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textoLogin {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+}
+
+#facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 408px;
+    height: 45px;
+    text-align: center;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+}
+
+#imgFacebook {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonRegistrate {
+    position: relative;
+    bottom: 20px;
+    width: 408px;
+    height: 45px;
+    text-align: center;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    margin: 0px 0px 100px 0px;
+}
+
+/* Registrate */
+
+#emailR {
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);  
+    margin: 100px 0px 0px 0px;
+}
+
+#contraseñaR {
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#nombreUsuario {
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);  
+}
+
+#botonRegistrateConfirmar {
+    width: 408px;
+    height: 45px;
+    text-align: center;
+    background: linear-gradient(180.74deg, #039F87 3.82%, #00D1CD 96.19%);
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+    margin: 0px 0px 100px 0px;
 }
 
 
+/* viewCrear */
 
-@media (max-width: 430px) {
+#crearBody {
+    display: flex;
+    flex-direction: column;
+   }
+   
+   #franjaUnoCrear {
+       display: flex;
+   }
+   
+   #franjaDosCrear {
+       width: 100%;
+       height: 250px;
+   }
+   
+   
+   #franjaTresCrear {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 100px;
+   }
+   
+   #arrastra {
+       width: 1300‬px;
+       height: 90px;
+   }
+   
+   #franjaCuatroCrear {
+       display: flex;
+       align-items: flex-start;
+       margin: 100px 0px 0px 0px;
+   }
+   
+   #cuadroUno {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin: 0px 300px 0px 300px;
+   }
+   
+   #cuadroMas {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 200px;
+       height: 200px;
+       background: #CC7B7B;
+       border: 1px solid #000000;
+       box-sizing: border-box;
+       box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+       font-size: 144px;
+       color: #FFFFFF;
+       border: 1px solid #000000;
+       margin: 0px 0px 30px 0px;
+   }
+   
+   #textoCuadroMAs {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 200px;
+       height: 40px;
+       background: #039F87;
+       border: 1px solid #000000;
+       box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+       font-family: "Reenie Beanie";
+       font-size: 30px;
+   }
+   
+   #cuadroDos {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #contenedorVideo {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 500px;
+       height: 200px;
+       border: 1px solid #000000;
+       font-family: "Reenie Beanie";
+       font-size: 60px;
+       margin: 0px 0px 30px 0px;
+   }
+   
+   #textoVideo {
+       font-family: "Reenie Beanie";
+       font-size: 40px;
+   }
+   
+   #franjaCincoCrear {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #panelUno {
+       width: 1400px;
+       height: 900px;
+       background: #C4C4C4;
+       border: 1px solid #000000;
+       box-sizing: border-box;
+       border-radius: 8px;
+       margin: 100px 0px 0px 0px;
+   }
+   
+   .franjaSeisCrear {
+       display: flex;
+       align-items: flex-start;
+       justify-content: center;
+   }
+   
+   .franjaSeisCrear > div {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 200px;
+       height: 40px;
+       background: #039F87;
+       box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+       margin: 20px 30px 0px 0px;
+       font-family: "Reenie Beanie";
+       font-size: 30px;
+   }
+   
+   #franjaSieteCrear {
+       display: flex;
+       align-items: flex-start;
+       justify-content: center;
+   }
+   
+   #botonAlPatron {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 200px;
+       height: 40px;
+       background: #CC7B7B;
+       box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+       margin: 20px 30px 0px 0px;
+       font-family: "Reenie Beanie";
+       font-size: 30px;
+       margin: 100px 0px 100px 0px;
+   }
 
-    @font-face {
-        font-family: 'Brushstrike';
-        src: url(./fonts/Brushstrike\ trial.ttf);
-        font-family: "Roboto-Regular";
-        src: url(./fonts/Roboto-Regular.ttf);
-    }
 
-    #imagenUno {
-        background-image: url(./image/login/torres.png);
-        height: 896px;
-    }
+   /* templeMenu */
 
-    #imagenDos {
-        background-image: url(./image/login/Queulat_glaciar_24\ 1.png);
-        height: 896px;
-    }
+   #contenedorMenu {
+    display: flex;
+    flex-direction: column;
+}
 
-    #imagenTres {
-        background-image: url(./image/login/iglesia-machuca\ 1.png);
-        height: 896px;
-    }
+#franjaUnoMenu {
+    display: flex;
+    justify-content: space-around;
+}
 
-    #imagenCuatro {
-        background-image: url(./image/login/moais.jpg);
-        height: 896px;
-    }
+#imgUsuario {
+    width: 120px;
+    height: 120px;
+    border-radius: 80px;
+}
 
-    #logo {
-        position: absolute;
-        width: 187px;
-        height: 129px;
-        left: 7px;
-        top: 45px;
+#textoNombreUsuario {
+    font-family: "Reenie Beanie";
+    font-size: 50px;
+    position: relative;
+    top: 50px;
+    right: 350px;
+}
 
-        border-radius: 10px;
-        margin-top: 33px;
-        margin-left: 119px;
-    }
+#cerrarSesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 30px;
+}
 
-    #usuario {
-        position: absolute;
-        margin-bottom: 39px;
-        bottom: 388px;
-        left: 192px;
+#btnCerrar {
+    width: 70px;
+    height: 70px;
+}
 
-        top: 383px;
-        z-index: 1;
-    }
+.franjaDosMenu {
+    display: flex;
+    justify-content: center;
+}
 
-    #contenedorIngreso {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        width: 294px;
-        height: 294px;
-        margin-top: 136px;
-        margin-left: 62px;
-        top: 291px;
-
-        background: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-
-        right: 1px;
-        left: 10px;
-    }
-
-
-    input {
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        height: 27px;
-        width: 276px;
-        margin-top: 17px;
-        margin-left: 5px;
-        font-family: "Roboto-Regular";
-    }
-
-    #email {
-        position: absolute;
-        display: flex;
-        background-repeat: no-repeat;
-
-        background-image: url(./image/new-email-outlined-envelope-back\ 1.png);
-        background-position: right;
-        margin-top: 23px;
-    }
-
-    #contraseña {
-        background-image: url(./image/padlock\ 1.png);
-        background-position: right;
-        background-repeat: no-repeat;
-        margin-top: 67px;
-    }
-
-    #iconoGoogle {
-        position: absolute;
-        background-repeat: no-repeat;
-        height: 22px;
-        width: 26px;
-        background-image: url(./image/google1.png);
-
-        bottom: 259px;
-
-        top: 175px;
-        right: 251px;
-
-    }
-
-    button {
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        width: 276px;
-        margin-top: 17px;
-        height: 34px;
-        margin-left: 8px;
-        cursor: pointer;
-        font-family: "Roboto-Regular";
-    }
-
-    #iniciar {
-        background: linear-gradient(180.75deg, #039F87 3.82%, #00D1CD 96.19%);
-        box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
-
-    }
-
-    .textoInicial {
-        text-align: center;
-        position: absolute;
-        top: 240px;
-
-        right: 18px;
-        left: 26px;
-    }
-
-    .parrafoUno {
-        font-size: 300%;
-        font-family: 'Brushstrike';
-        color: white;
-        margin-top: 10px;
-        margin-bottom: 15px;
-    }
-
-    #pTres {
-        margin-left: 80px;
-        margin-top: 10px;
-        margin-bottom: 2px;
-        font-family: "Roboto-Regular";
-        font-size: 102%;
-    }
-
+.franjaDosMenu > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background: #CC7B7B;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Reenie Beanie";
+    font-size: 30px;
+    color: #000000;
+    margin: 60px 50px 0px 50px;
 }

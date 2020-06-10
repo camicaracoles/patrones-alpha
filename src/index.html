@@ -5,85 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Patrones Alpha</title>
   <link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+  <div id="root"></div>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
 
-  <div id="contenedorGeneral">
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+  <!--<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>-->
 
-    <img id="logo" src="./image/logo.jpg">
-
-    <div class="carrusel">
-      <div id="imagenUno">
-        <div class="textoInicial">
-          <p class="parrafoUno">¿Te gusta </p>
-          <p class="parrafoUno">viajar por Chile ?</p>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="carrusel">
-      <div id="imagenDos">
-        <div class="textoInicial">
-          <p class="parrafoUno">Publica tus</p>
-          <p class="parrafoUno">mejores picadas</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="carrusel">
-      <div id="imagenTres">
-        <div class="textoInicial">
-          <p class="parrafoUno">Conoce a otros </p>
-          <p class="parrafoUno">viajeros</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="carrusel">
-      <div id="imagenCuatro">
-        <div class="textoInicial">
-          <p class="parrafoUno">Recorrer Chile </p>
-          <p class="parrafoUno">ya no es </p>
-          <p class="parrafoUno">una excusa </p>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <div style="text-align:center">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-
-    </div>
-  </div>
-
-  <img id="usuario" src="image/usercian 1.png">
-  <div id="contenedorIngreso">
-
-
-
-
-    <input id=email placeholder="Correo electronico">
-
-    <input id="contraseña" placeholder="Contraseña">
-    <button id="iniciar"> Iniciar sesión</button>
-    <button id="google">
-      <img id="iconoGoogle" /> sesión con Google
-    </button>
-    <p id="pTres">¿Aún no eres parte?</p>
-    <Button id="botonRegistrate">Registrate</Button>
-
-  </div>
-  </div>
-
-
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyC_HmMe-PHsQ2DStwZWlqcbJbOr-EeE0_A",
+      authDomain: "patronesalpha.firebaseapp.com",
+      databaseURL: "https://patronesalpha.firebaseio.com",
+      projectId: "patronesalpha",
+      storageBucket: "patronesalpha.appspot.com",
+      messagingSenderId: "105389820314",
+      appId: "1:105389820314:web:e70e03ac52e3f9e342d223",
+      measurementId: "G-T1757LNH0M"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
   <script type="module" src="main.js"></script>
 </body>
 
